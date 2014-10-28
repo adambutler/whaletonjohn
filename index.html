@@ -1,20 +1,43 @@
-<!-- 
+<!--
 
 *____*
 
 -->
- 
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Whaleton John by Adam Butler</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
     <style type="text/css">
-    
+
+      @-webkit-keyframes rotating {
+          from{
+              transform: rotate(0deg);
+              -webkit-transform: rotate(0deg);
+          }
+          to{
+              transform: rotate(360deg);
+              -webkit-transform: rotate(360deg);
+          }
+      }
+
+      @keyframes rotating {
+          from{
+              transform: rotate(0deg);
+              -webkit-transform: rotate(0deg);
+          }
+          to{
+              transform: rotate(360deg);
+              -webkit-transform: rotate(360deg);
+          }
+      }
+
       html, body {
         background: #2aa2da;
       }
-      
+
       h1 {
         color: #dceff8;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -26,9 +49,20 @@
         margin-top: -175px;
         width: 100%;
       }
+
+      span {
+        line-height: 171px;
+        display: inline-block;
+        width: 210px;
+        height: 210px;
+        position: relative;
+        top: -50px;
+        animation: rotating 5s linear infinite;
+        -webkit-animation: rotating 5s linear infinite;
+      }
     </style>
   </head>
   <body>
-    <h1><sup>&#10030;</sup>______<sup>&#10030;</sup></h1>
+    <h1><span>&#10030;</span>______<span>&#10030;</span></h1>
   </body>
 </html>
